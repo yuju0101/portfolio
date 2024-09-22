@@ -1,0 +1,73 @@
+@mixin respond-to($breakpoint) {
+    @if $breakpoint ==xl {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==lg {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==md {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==sm {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==xs {
+        @media (max-width: 450px) {
+            @content;
+        }
+    }
+
+    /* for ipad portrait */
+    @else if $breakpoint ==ipadPortrait {
+        @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+            @content;
+        }
+    }
+
+    /* for ipad landscape */
+    @else if $breakpoint ==ipadLandscape {
+        @media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+            @content;
+        }
+    }
+
+    /* for ipad air portrait */
+    @else if $breakpoint ==ipadairPortrait {
+        @media all and (device-width: 820px) and (device-height: 1180px) and (orientation:portrait) {
+            @content;
+        }
+    }
+
+    /* for ipad air landscape */
+    @else if $breakpoint ==ipadairLandscape {
+        @media all and (device-width: 1180px) and (device-height: 820px) and (orientation:landscape) {
+            @content;
+        }
+    }
+
+    /* for ipad pro portrait */
+    @else if $breakpoint ==ipadproPortrait {
+        @media all and (device-width: 1024px) and (device-height: 1366px) and (orientation:portrait) {
+            @content;
+        }
+    }
+
+    /* for ipad pro landscape */
+    @else if $breakpoint ==ipadproLandscape {
+        @media all and (device-width: 1366px) and (device-height: 1024px) and (orientation:landscape) {
+            @content;
+        }
+    }
+}

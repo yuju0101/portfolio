@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuju's portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="c-nav">
+        <div class="container">
+            <div class="row c-nav__wrap">
+                <div class="menu-wrap">
+                    <h1 class="c-nav__logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.svg" alt="logo">
+                        </a>
+                    </h1>
+                    <!-- Hamburger Button -->
+                    <div class="hamburger toggler">
+                        <div></div>
+                    </div>
+        
+                    <!-- Menu -->
+                    <div class="menu">
+                        <ul>
+                            <li><a class="line line-to-right" href="index.html">首頁</a></li>
+                            <li><a class="line line-to-right" href="digital.html">數位產品</a></li>
+                            <li><a class="line line-to-right" href="visual.html">視覺設計</a></li>
+                            <li><a class="line line-to-right" href="photography.html">影像</a></li>
+                            <li><a class="line line-to-right" href="about.html">關於我</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid position-relative p-container">
+        <div class="row">
+            <!-- Scrollspy -->
+            <div class="col-md-2 col-12 scrollspy-wrapper" id="scrollspy">
+                <div class="c-scrollspy">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action" href="#kv" id="link-kv">TOP</a>
+                        <a class="list-group-item list-group-item-action" href="#portfolio">Feature works</a>
+                        <a class="list-group-item list-group-item-action" href="#ability" id="link-ability">What I do</a>
+                        <a class="list-group-item list-group-item-action" href="#process">Design process</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content -->
+            <div class="col-md-10 col-12" data-target="#scrollspy">
+
+                <!-- top area -->
+                <section class="p-hero p-hero__bg" id="kv">
+                    <div class="container-fluid p-0">
+                        <div class="row p-hero__container">
+                            <div class="p-hero__info col-md-5 col-12">
+                                <h2>Hey! I'm Yuju</h2>
+                                <p class="p-hero__text">
+                                    我是Yuju，很高興認識你！<br>
+                                    我擁有近10年業界經驗，是一名擁有多元能力的設計師。
+                                    我希望為人們創造出更好用、更愉悅、且更有價值的產品。
+                                </p>
+                                <p class="p-hero__note">BRANDING / UIUX / APP / WEB DEVELOPMENT</p>
+                                <div class="p-hero__btngroup">
+                                    <a href="about.html" class="c-btn c-btn__filled">
+                                        <p class="mb-2">
+                                            關於我
+                                            <span>
+                                                <img src="assets/images/arrow-right-white.svg" alt="go-to">
+                                            </span>
+                                        </p>
+                                    </a>
+                                    <a href="#portfolio" class="c-btn c-btn__outline">
+                                        <p>
+                                            觀看作品
+                                            <span>
+                                                <img src="assets/images/arrow-right-black.svg" alt="go-to">
+                                            </span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-11 p-hero__img">
+                                <div class="img-wrap">
+                                    <img src="assets/images/kv-img.png" alt="profile photo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- works intro -->
+                <section class="p-portfolio" id="portfolio">
+                    <h2>Fearture works<br class="pc-none"><span>作品介紹</span></h2>
+                    <div class="row">
+                        <a class="c-card col-md-6 col-12" href="pages/digital/001.html">
+                            <div class="card-mr">
+                                <div class="img-wrap">
+                                    <img src="assets/images/index/work-1.jpg" alt="21天主管新手村">
+                                </div>
+                                <div class="c-card-body">
+                                    <ul class="c-tag-wrap">
+                                        <li class="tag">
+                                            <p>UX設計</p>
+                                        </li>
+                                        <li class="tag">
+                                            <p>產品設計</p>
+                                        </li>
+                                        <li class="tag">
+                                            <p>Figma</p>
+                                        </li>
+                                    </ul>
+                                    <div class="c-card-title">
+                                        <h3>21天主管新手村</h3>
+                                        <img src="assets/images/arrow-round.svg" alt="go-to">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="c-card col-md-6 col-12" href="pages/digital/002.html">
+                            <div class="card-mr">
+                                <div class="img-wrap">
+                                    <img src="assets/images/index/work-2.jpg" alt="Green share">
+                                </div>
+                                <div class="c-card-body">
+                                    <ul class="c-tag-wrap">
+                                        <li class="tag">
+                                            <p>UI/UX</p>
+                                        </li>
+                                        <li class="tag">
+                                            <p>產品設計</p>
+                                        </li>
+                                        <li class="tag">
+                                            <p>Figma</p>
+                                        </li>
+                                    </ul>
+                                    <div class="c-card-title">
+                                        <h3>Green share</h3>
+                                        <img src="assets/images/arrow-round.svg" alt="go-to">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="c-card col-md-6 col-12" href="pages/digital/003.html">
+                            <div class="card-mr">
+                                <div class="img-wrap">
+                                    <img src="assets/images/index/work-3.jpg" alt="前進竹科：揭開半導體工程師的苦與樂">
+                                </div>
+                                <div class="c-card-body">
+                                    <ul class="c-tag-wrap">
+                                        <li class="tag">
+                                            <p>UI設計</p>
+                                        </li>
+                                        <li class="tag">
+                                            <p>網站切版</p>
+                                        </li>
+                                        <li class="tag">
+                                            <p>Figma</p>
+                                        </li>
+                                    </ul>
+                                    <div class="c-card-title">
+                                        <h3>前進竹科：揭開半導體工程師的苦與樂</h3>
+                                        <img src="assets/images/arrow-round.svg" alt="go-to">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="c-card col-md-6 col-12" href="pages/digital/004.html">
+                            <div class="card-mr">
+                                <div class="img-wrap">
+                                    <img src="assets/images/index/work-4.jpg" alt="天下創新學院">
+                                </div>
+                                <div class="c-card-body">
+                                    <ul class="c-tag-wrap">
+                                        <li class="tag">
+                                            <p>UI設計</p>
+                                        </li>
+                                        <li class="tag">
+                                            <p>Figma</p>
+                                        </li>
+                                    </ul>
+                                    <div class="c-card-title">
+                                        <h3>天下創新學院</h3>
+                                        <img src="assets/images/arrow-round.svg" alt="go-to">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="digital.html" class="c-btn c-btn__outline d-inline-block">
+                        <p>
+                            觀看更多作品
+                            <span>
+                                <img src="/assets/images/arrow-right-black.svg" alt="go-to">
+                            </span>
+                        </p>
+                    </a>
+                </section>
+
+                <section class="p-intro" id="ability">
+                    <h2>What I do<br class="pc-none"><span>技能領域</span></h2>
+                    <div class="row mb-5">
+                        <div class="p-intro__card col">
+                            <p>平面設計</p>
+                            <div class="img-wrap">
+                                <img src="assets/images/index/ability-1.jpg" alt="平面設計">
+                            </div>
+                        </div>
+                        <div class="p-intro__card col">
+                            <p>UI/UX設計</p>
+                            <div class="img-wrap">
+                                <img src="assets/images/index/ability-2.jpg" alt="UI/UX設計">
+                            </div>
+                        </div>
+                        <div class="p-intro__card col">
+                            <p>網頁切版</p>
+                            <div class="img-wrap">
+                                <img src="assets/images/index/ability-3.jpg" alt="網頁切版">
+                            </div>
+                        </div>
+                        <div class="p-intro__card col">
+                            <p>攝影</p>
+                            <div class="img-wrap">
+                                <img src="assets/images/index/ability-4.jpg" alt="攝影">
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="c-btn c-btn__outline d-inline-block">
+                        <p>
+                            了解更多
+                            <span>
+                                <img src="assets/images/arrow-right-black.svg" alt="go-to">
+                            </span>
+                        </p>
+                    </a>
+                </section>
+
+                <section class="p-process" id="process">
+                    <h2>Design process<br class="pc-none"><span>設計工作流程</span></h2>
+                    <ul class="row justify-content-center p-process__wrap">
+                        <li class="p-process__list col">
+                            <div class="img-wrap">
+                                <img src="assets/images/icon-1.svg" alt="同理並定義需求">
+                            </div>
+                            <h4 class="mb-3">同理並定義需求</h4>
+                            <p>透過溝通、觀察或使用者訪談等方式了解設計目標，進而定義出需求痛點及設計需求</p>
+                        </li>
+                        <li class="p-process__list col">
+                            <div class="img-wrap">
+                                <img src="assets/images/icon-2.svg" alt="探索與發想">
+                            </div>
+                            <h4 class="mb-3">探索與發想</h4>
+                            <p>大量地蒐集相關資料、發想創意，考量到執行可能性後進行收斂，釐清出設計方向</p>
+                        </li>
+                        <li class="p-process__list col">
+                            <div class="img-wrap">
+                                <img src="assets/images/icon-3.svg" alt="提案與溝通">
+                            </div>
+                            <h4 class="mb-3">提案與溝通</h4>
+                            <p>根據討論出的設計目標製作初稿，與團隊成員進行討論與修改，最後決議版本</p>
+                        </li>
+                        <li class="p-process__list col">
+                            <div class="img-wrap">
+                                <img src="assets/images/icon-4.svg" alt="執行與迭代">
+                            </div>
+                            <h4 class="mb-3">執行與迭代</h4>
+                            <p>將定案的設計進行精稿製作，視專案需求加入使用測試，最後進行設計交付、迭代與維護</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- footer  -->
+    <section class="c-footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-11 c-footer__container">
+                    <div class="c-footer__info">
+                        <img src="assets/images/logo.svg" alt="Logo">
+                        <p class="mb-1">若有數位產品設計和開發相關問題，歡迎與我聯絡！</p>
+                        <p>Copyright © 2024 YUJU</p>
+                    </div>
+                    <div class="p-hero__btngroup">
+                        <a href="mailto:chobitsjay@gmail.com" class="c-btn c-btn__filled c-btn__filled--s">
+                            <p class="mb-2">
+                                <span>
+                                    <img src="assets/images/mail.svg" alt="Contact">
+                                </span>
+                                Contact me
+                            </p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/weng-lauren-tw/"
+                            class="c-btn c-btn__outline c-btn__outline--s" target="_blank">
+                            <p>
+                                <span>
+                                    <img src="assets/images/linkedin.svg" alt="Linkedin">
+                                </span>
+                                Linkedin
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<!-- Javascript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/scrollspy.js"></script>
+
+</html>

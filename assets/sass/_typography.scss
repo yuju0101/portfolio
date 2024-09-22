@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    @include respond-to(sm){
+        font-size: 32px;
+    }
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-family: "Philosopher", "Noto Sans TC", sans-serif;
+
+    @include respond-to(sm){
+        font-size: 28px;
+    }
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 1.2;
+
+    @include respond-to(lg){
+        font-size: 26px;
+    }
+
+    @include respond-to(sm){
+        font-size: 24px;
+    }
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 1.2;
+
+    @include respond-to(sm){
+        font-size: 22px;
+    }
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+
+@mixin fs-1 {
+    font-size: 40px;
+
+    @include respond-to(sm){
+        font-size: 32px;
+    }
+}
+
+@mixin fs-2 {
+    font-size: 32px;
+
+    @include respond-to(sm){
+        font-size: 28px;
+    }
+}
+
+@mixin fs-3 {
+    font-size: 28px;
+
+    @include respond-to(sm){
+        font-size: 24px;
+    }
+}
+
+@mixin fs-4 {
+    font-size: 24px;
+
+    @include respond-to(sm){
+        font-size: 22px;
+    }
+}
+
+@mixin fs-5 {
+    font-size: 20px;
+
+    @include respond-to(sm){
+        font-size: 18px;
+    }
+}
+
+@mixin fs-6 {
+    font-size: 16px;
+}
+
+@mixin fs-7 {
+    font-size: 13px;
+}
+
+@mixin fs-8 {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+@mixin fs-9 {
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: 500;
+
+    @include respond-to(sm){
+        font-size: 34px;
+    }
+}
+
+
+@mixin h2 {
+    color: $gray-700;
+    font-size: 54px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+    padding: 0 24px 0 0;
+    font-weight: 500;
+    letter-spacing: -.5px;
+    position: relative;
+
+
+    span::before{
+        content: "";
+        height: 40px;
+        width: 1px;
+        background: $gray-400;
+        display: inline-block;
+        margin: 0 16px;
+    }
+
+    span{
+        font-size: 16px;
+        color: $gray-600;
+        letter-spacing: 0;
+    }
+
+    @include respond-to(sm){
+        font-size: 32px;
+        margin-bottom: 32px;
+        line-height: 1.6;
+
+        span::before{
+            content: "";
+            height: 1px;
+            width: 40px;
+            background: $gray-400;
+            display: inline-block;
+            margin: 0;
+            position: absolute;
+            bottom: 40px;
+        }
+
+    }
+}
+
+

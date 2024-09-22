@@ -1,0 +1,33 @@
+
+$primary: #FF6A3C;
+$primary-600:#FFD6CA;
+$primary-900: #FFEBE5;
+
+
+$secondary: #6C757D;
+$success: #198754;
+$danger: #DC3545;
+$warning: #FFC107;
+$info: #0DCAF0;
+
+
+$black: #000000;
+$white: #ffffff;
+
+$gray-50: #ffffffc7;
+$gray-100: #FAFAFA;
+$gray-200: #F1F1F1;
+$gray-300: #E9E9E9;
+$gray-400: #C1C1C1;
+$gray-500: #919191;
+$gray-600: #5B5B5B;
+$gray-700: #3B3B3B;
+$gray-800: #1E1E1E;
+$gray-900: $black;
+
+
+
+
+.color--primary{
+    color: $primary;
+}

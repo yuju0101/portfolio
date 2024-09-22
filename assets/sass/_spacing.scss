@@ -1,0 +1,17 @@
+@mixin spacing-1{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+@mixin spacing-2{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+@mixin spacing-3{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.mt-120 {
+    margin-top: 120px;
+}
