@@ -19,6 +19,7 @@
         background-color: transparent;
         transition: all .5s;
         z-index: 999;
+        top: 0;
 
         &__wrap {
             height: 80px;
@@ -152,7 +153,7 @@
                 }
             }
             &__wrap {
-                height: 40px;
+                height: 60px;
             }
 
             .menu-wrap{
@@ -522,6 +523,31 @@
         }
     }
 
+    &-btn__text {
+        p {
+            color: $gray-700;
+            border-bottom: 2px solid $gray-400;
+            display: inline-block;
+            padding: 8px 0;
+            transition: all .3s;
+
+            span {
+                margin: 0 8px;
+            }
+        }
+
+        &:hover {
+            transition: all .3s;
+            p {
+                border-bottom: 2px solid $primary;
+            }
+        }
+
+        @include respond-to(sm) {
+            display: contents;
+        }
+    }
+
     //tag
     &-tag-wrap {
         display: flex;
@@ -614,153 +640,6 @@
     }
 
 }
-
-
-
-// .menu-wrap {
-//     position: fixed;
-//     top: 0;
-//     right: 0;
-//     z-index: 1;
-
-//     .toggler {
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         z-index: 2;
-//         cursor: pointer;
-//         width: 50px;
-//         height: 50px;
-//         opacity: 0;
-//     }
-
-//     .hamburger {
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         z-index: 1;
-//         width: 60px;
-//         height: 60px;
-//         padding: 1rem;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-
-//         >div {
-//             position: relative;
-//             width: 100%;
-//             height: 2px;
-//             background-color: #0e0e0e;
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-//             transition: all 0.4s ease;
-
-//             &:before,
-//             &:after {
-//                 content: '';
-//                 position: absolute;
-//                 z-index: 1;
-//                 top: -10px;
-//                 width: 100%;
-//                 height: 2px;
-//                 background: inherit;
-//             }
-
-//             &:after {
-//                 top: 10px;
-//             }
-//         }
-//     }
-
-//     .toggler:checked+.hamburger>div {
-//         transform: rotate(135deg);
-
-//         &:before,
-//         &:after {
-//             top: 0;
-//             transform: rotate(90deg);
-//         }
-//     }
-
-//     .toggler:checked:hover+.hamburger>div {
-//         transform: rotate(225deg);
-//     }
-
-//     .toggler:checked~.menu {
-//         visibility: visible;
-
-//         >div {
-//             transform: scale(1);
-//             transition-duration: var(--menu-speed);
-
-//             >div {
-//                 opacity: 1;
-//                 transition: opacity 0.4s ease;
-//             }
-//         }
-//     }
-
-//     .menu {
-//         position: fixed;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//         visibility: hidden;
-//         overflow: hidden;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         background-color: $primary;
-
-//         >div {
-//             background-color: var(--overlay-color);
-//             border-radius: 50%;
-//             width: 200vw;
-//             height: 200vw;
-//             display: flex;
-//             flex: none;
-//             align-items: center;
-//             justify-content: center;
-//             transform: scale(0);
-//             transition: all 0.4s ease;
-
-//             >div {
-//                 text-align: center;
-//                 max-width: 90vw;
-//                 max-height: 100vh;
-//                 opacity: 0;
-//                 transition: opacity 0.4s ease;
-
-//                 ul {
-//                     li {
-//                         list-style: none;
-//                         color: $gray-800;
-//                         font-size: 20px;
-//                         padding: .8rem;
-//                         position: relative;
-
-//                         a {
-//                             color: inherit;
-//                             text-decoration: none;
-//                             transition: color 0.4s ease;
-//                             font-size: 28px;
-//                             font-weight: 500;
-//                             letter-spacing: 1px;
-//                             color: $white;
-
-//                             @include respond-to(sm){
-//                                 font-size: 24px;
-//                             }                            
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
 
 //btn effect
 .line {

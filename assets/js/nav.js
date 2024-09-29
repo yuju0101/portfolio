@@ -29,3 +29,39 @@ $(document).ready(function () {
         }
     });
 });
+
+
+//gallery
+
+const thumbnails = document.querySelectorAll('.thumbnail');
+const modal = document.getElementById('modal');
+const modalImage = document.getElementById('modalImage');
+const caption = document.getElementById('caption');
+const close = document.getElementById('close');
+const body = $('body'); // jQuery 對 body 的引用
+
+thumbnails.forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+        modal.style.display = 'flex';
+        modal.style.visibility = 'visible';
+        modalImage.src = thumbnail.src;  // 設定模態框中的圖片為被點擊的圖片
+        caption.innerHTML = thumbnail.alt; // 設定標題為圖片的alt文本
+        body.css('overflow', 'hidden'); // 禁止背景滾動
+    });
+});
+
+close.addEventListener('click', () => {
+    modal.style.display = 'none'; // 關閉模態框
+    modal.style.visibility = 'hidden';
+    body.css('overflow', 'auto'); // 恢復背景滾動
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none'; // 點擊模態框外部關閉模態框
+        modal.style.visibility = 'hidden';
+        body.css('overflow', 'auto'); // 恢復背景滾動
+    }
+});
+
+

@@ -628,9 +628,12 @@
                     width: 50%;
                 }
     
-                @media (max-width: 992px) {
+                @include respond-to(md) {
                     flex-direction: column;
                     width: auto;
+                    &-two {
+                        width: auto;
+                    }
                 }
     
             }
@@ -648,7 +651,7 @@
             }
     
             .img-wrap {
-                margin-bottom: 32px;
+                margin-bottom: 16px;
             }
     
             .article-card {
@@ -686,7 +689,7 @@
                 @include fs-7;
                 padding: 20px;
                 background-color: $white;
-                border-left: 2px solid $primary;
+                border-left: 6px solid $primary-600;
                 color: $gray-500;
     
                 span {
@@ -789,6 +792,15 @@
     &-photo {
         &__wrap {
             margin: 0 24px;
+        }
+    }
+
+    &-link{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 48px;
+        .material-symbols-outlined {
+            font-size: 18px;
         }
     }
 }
