@@ -1100,6 +1100,11 @@ button {
   background-color: #E9E9E9;
   transition: all 0.5s;
 }
+.p-works__wrap .btnGroup .small-btn.disable {
+  background-color: #F1F1F1;
+  border: 0.8px solid #C1C1C1;
+  color: #C1C1C1;
+}
 @media (max-width: 768px) {
   .p-works__wrap {
     padding: 80px 20px 0 20px;

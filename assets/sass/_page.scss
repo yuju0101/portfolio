@@ -299,6 +299,12 @@
                         background-color: $gray-300;
                         transition: all .5s;
                     }
+
+                    &.disable{
+                        background-color: $gray-200;
+                        border: .8px solid $gray-400;
+                        color: $gray-400;
+                    }
                 }
             }
         }
