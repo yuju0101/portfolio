@@ -163,14 +163,17 @@
             align-items: center;
             padding: 0;
             margin: 0 15px 0 0;
+            transition: all .5s;
 
             .img-wrap {
                 border-radius: 100%;
                 background-color: $black;
-
+                overflow: hidden;
+                
                 img {
                     border-radius: 100%;
                     opacity: .7;
+                    transition: all .5s;
                 }
             }
 
@@ -180,6 +183,15 @@
                 font-size: 24px;
                 font-weight: 600;
                 z-index: 1;
+            }
+
+            &:hover{
+                .img-wrap{
+                    img{
+                        transform: scale(1.1);
+                        transition: all .5s;
+                    }
+                }
             }
 
         }

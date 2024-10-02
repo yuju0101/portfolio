@@ -79,6 +79,10 @@ h6 {
   margin-top: 120px;
 }
 
+.pr-0 {
+  padding-right: 0 !important;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -953,14 +957,17 @@ button {
   align-items: center;
   padding: 0;
   margin: 0 15px 0 0;
+  transition: all 0.5s;
 }
 .p-intro__card .img-wrap {
   border-radius: 100%;
   background-color: #000000;
+  overflow: hidden;
 }
 .p-intro__card .img-wrap img {
   border-radius: 100%;
   opacity: 0.7;
+  transition: all 0.5s;
 }
 .p-intro__card p {
   color: #ffffff;
@@ -968,6 +975,10 @@ button {
   font-size: 24px;
   font-weight: 600;
   z-index: 1;
+}
+.p-intro__card:hover .img-wrap img {
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 @media (max-width: 1200px) {
   .p-intro {
